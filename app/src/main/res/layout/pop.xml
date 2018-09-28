@@ -107,9 +107,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:layout_marginBottom="15dp"
                     android:orientation="horizontal">
 
@@ -131,17 +131,32 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="동남아창의융합학부"
+                            android:text="안성민(20131530)"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="동남아창의융합학부 (주전공)"
                             android:textColor="#000000"
                             android:textSize="15dp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="안성민(20131530)"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="17dp" />
+                            android:text="컴퓨터공학과 (복수전공)"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="국제무역학과 (부전공)"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
 
                     </LinearLayout>
                 </LinearLayout>
@@ -150,9 +165,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:layout_marginBottom="15dp"
                     android:orientation="horizontal">
 
@@ -173,6 +188,14 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:text="이승현(20101005)"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:text="인도네시아 말레이시아 학부"
                             android:textColor="#000000"
                             android:textSize="15dp" />
@@ -180,10 +203,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="이승현(20101005)"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="17dp" />
+                            android:text="* 오픈소스 공모전이므로 하드웨어 연동 부분은 제외함 (아두이노 부품이 있어야 실행 가능하므로)"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -191,9 +213,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:layout_marginBottom="15dp"
                     android:orientation="horizontal">
 
@@ -214,6 +236,14 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:text="푸쁘윙꼬(20152727)"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:text="동남아창의융합학부"
                             android:textColor="#000000"
                             android:textSize="15dp" />
@@ -221,11 +251,16 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="푸쁘윙꼬(20152727)
-\n* 초창기 개발 멤버 (공모전 참가는 빠지겠다고 합니다)"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="17dp" />
+                            android:text="* 초창기 개발 멤버입니다."
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* 공모전 참가는 빠진다고 합니다."
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
                     </LinearLayout>
                 </LinearLayout>
 

@@ -29,23 +29,24 @@ public class Game0_Start extends AppCompatActivity {
         Button New_Game=findViewById(R.id.New_Game_Button_ID);
         Button Load_Game=findViewById(R.id.Load_Game_Button_ID);
 
+
+        // 새로시작 버튼
         New_Game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
 
                 SharedPreferences Data_Box= getApplicationContext().getSharedPreferences("Data_Box",MODE_PRIVATE);
-                SharedPreferences.Editor editor = Data_Box.edit();
-                editor.putInt("Day",0);
 
                 SharedPreferences.Editor Editor=Data_Box.edit();
+                Editor.putInt("Day",0);
                 Editor.putInt("Family_One_Hungry",100);
                 Editor.putInt("Family_One_Thirst",100);
                 Editor.putInt("Family_One_Hp",100);
                 Editor.putInt("Family_Two_Hungry",100);
                 Editor.putInt("Family_Two_Thirst",100);
                 Editor.putInt("Family_Two_Hp",100);
-                Editor.putInt("Food",15);
+                Editor.putInt("Food",10);
                 Editor.putInt("Water",10);
                 Editor.putInt("Global_Damage",-1);
                 Editor.putInt("Family_One_Damage",-1);
@@ -53,24 +54,22 @@ public class Game0_Start extends AppCompatActivity {
                 Editor.putBoolean("Family_One_Not_Died", true);
                 Editor.putBoolean("Family_Two_Not_Died", true);
 
-
                 Editor.commit();
-                editor.commit();
                 Intent Launch_Activity=new Intent(Game0_Start.this,Game1_Day.class);
                 startActivity(Launch_Activity);
             }
         });
 
+
+
+        // 불러오기 버튼 : 그냥 이동
         Load_Game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-
                 Intent Launch_Activity=new Intent(Game0_Start.this,Game1_Day.class);
                 startActivity(Launch_Activity);
             }
         });
-
     }
-
 }

@@ -35,7 +35,6 @@ public class Game1_Day extends AppCompatActivity {
         SharedPreferences Data_Box = getApplicationContext().getSharedPreferences("Data_Box", MODE_PRIVATE);
         Day = Data_Box.getInt("Day", 0);
 
-
         // 시작 동영상 실행...
         if (Day == 0)
         {
@@ -46,8 +45,7 @@ public class Game1_Day extends AppCompatActivity {
         }
 
 
-
-
+/*
 
         //   Reducing Hungry And Increasing Damage According To Day
         if (Day >= 1) {
@@ -57,7 +55,8 @@ public class Game1_Day extends AppCompatActivity {
             int Temp_Two_Thirst = Data_Box.getInt("Family_Two_Thirst", 100);
 
 
-            /*
+            */
+/*
             // 이 부분은 Game4_Run.java 파일로 이사갔습니다.
             // 이 구간에서 마이너스 시킬 경우 불러오기 할때마다 마이너스 되는 버그 발생
             Random r = new Random();
@@ -69,7 +68,8 @@ public class Game1_Day extends AppCompatActivity {
             Temp_One_Thirst=Temp_One_Thirst-Random_One_Value2;
             int Random_Two_Value2 = r.nextInt(30 - 10) + 10;
             Temp_Two_Thirst=Temp_Two_Thirst-Random_Two_Value2;
-            */
+            *//*
+
 
 
             int Temp_Global_Damage = Data_Box.getInt("Global_Damage", -1);
@@ -87,6 +87,7 @@ public class Game1_Day extends AppCompatActivity {
             //Temp_Two_Hp = Temp_Two_Hp + Temp_Family_Two_Damage;
 
 
+
             SharedPreferences.Editor editor = Data_Box.edit();
             editor.putInt("Family_One_Hungry", Temp_One_Hungry);
             editor.putInt("Family_Two_Hungry", Temp_Two_Hungry);
@@ -102,6 +103,8 @@ public class Game1_Day extends AppCompatActivity {
             editor.putInt("Family_Two_Damage", Temp_Family_Two_Damage);
             editor.commit();
         }
+
+*/
 
 
 
@@ -138,6 +141,7 @@ public class Game1_Day extends AppCompatActivity {
         Typeface Msg_font = Typeface.createFromAsset(getAssets(), "fonts/game_msg_font.otf");
         Day_No_View.setTypeface(Day_font);
         //  Diary_Message_View.setTypeface(Day_font);
+
 
 
         Next_Button.setOnClickListener(new View.OnClickListener() {

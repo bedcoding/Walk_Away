@@ -197,10 +197,10 @@ public class Game4_Run extends AppCompatActivity implements SensorEventListener 
 
                 // 21. 배고픔, 목마름 마이너스 시키기 위해 랜덤 함수 호출
                 Random r = new Random();
-                int Random_One_Value1 = r.nextInt(30 - 10) + 10;
-                int Random_One_Value2 = r.nextInt(30 - 10) + 10;
-                int Random_Two_Value1 = r.nextInt(30 - 10) + 10;
-                int Random_Two_Value2 = r.nextInt(30 - 10) + 10;
+                int Random_One_Value1 = r.nextInt(20 - 10) + 10;  // 배고프면 한 5일 버티려나
+                int Random_One_Value2 = r.nextInt(33 - 10) + 10;  // 목마르면 한 3일 버티려나
+                int Random_Two_Value1 = r.nextInt(20 - 10) + 10;
+                int Random_Two_Value2 = r.nextInt(33 - 10) + 10;
 
 
                 // 3-1. 배고픔, 목마름 마이너스 시키기

@@ -56,8 +56,8 @@ public class Game2_Main extends AppCompatActivity {
         Family_Two_Hp = Data_Box.getInt("Family_Two_Hp", 100);
         Family_Two_Damage = Data_Box.getInt("Family_Two_Damage", -1);
 
-        Water = Data_Box.getInt("Water", 1);
-        Food = Data_Box.getInt("Food", 1);
+        Water = Data_Box.getInt("Water", 10);
+        Food = Data_Box.getInt("Food", 10);
         Damage = Data_Box.getInt("Global_Damage", -1);
         Family_One_Not_Died = Data_Box.getBoolean("Family_One_Not_Died", true);
         Family_Two_Not_Died = Data_Box.getBoolean("Family_Two_Not_Died", true);
@@ -83,8 +83,8 @@ public class Game2_Main extends AppCompatActivity {
 
 
     // Initiating and Views And Button
-    private void Initiating_Views() {
-
+    private void Initiating_Views()
+    {
         // Family One View Initiating
         Family_One_Hungry_View = findViewById(R.id.Family_One_Hungry_View_Id);
         Family_One_Thirst_View = findViewById(R.id.Family_One_Thirst_View_Id);
@@ -236,8 +236,10 @@ public class Game2_Main extends AppCompatActivity {
     }
 
     // Updating Data Into Views And Shared Preference
-    private void Put_And_Update_Data() {
+    private void Put_And_Update_Data()
+    {
         SharedPreferences.Editor Editor = Data_Box.edit();
+
         // Set Data
 
         // 첫째놈이 죽은 경우
@@ -300,8 +302,6 @@ public class Game2_Main extends AppCompatActivity {
 
             Family_Two_Not_Died = false;
             Editor.putBoolean("Family_Two_Not_Died", Family_Two_Not_Died);
-
-
         }
 
         // 둘째가 안 죽었다면
@@ -320,6 +320,7 @@ public class Game2_Main extends AppCompatActivity {
         Food_View.setText(String.valueOf(Food));
         Water_View.setText(String.valueOf(Water));
         Damage_View.setText(String.valueOf(Damage));
+
         Editor.putInt("Food", Food);
         Editor.putInt("Water", Water);
         Editor.commit();
