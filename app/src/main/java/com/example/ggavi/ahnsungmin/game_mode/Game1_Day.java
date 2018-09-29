@@ -148,7 +148,7 @@ public class Game1_Day extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                if(Day < 20)  // 엔딩 날짜가 아닌 경우
+                if(Day < 50)  // 엔딩 날짜가 아닌 경우 (현재 엔딩 날짜: 50일)
                 {
                     Intent Launch_Activity = new Intent(Game1_Day.this, Game2_Main.class);
                     startActivity(Launch_Activity);
