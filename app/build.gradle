@@ -9,6 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true  // API 19 버전 스마트폰에서 빌드가 안되서 구글링해보니 이거를 넣으라고 함 (넣고 나니 잘 되네)
     }
     buildTypes {
         release {
