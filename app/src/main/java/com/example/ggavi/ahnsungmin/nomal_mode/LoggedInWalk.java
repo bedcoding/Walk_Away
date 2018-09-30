@@ -162,7 +162,7 @@ public class LoggedInWalk extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS},1);
+        //ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS},1);
 
 
         // 상단 액션바(타이틀 바) 없애려고 넣음
